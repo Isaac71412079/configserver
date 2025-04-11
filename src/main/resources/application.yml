@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: configuration-server
+  main:
+    banner-mode: off
+  cloud:
+    config:
+      enabled: true
+      server:
+        git:
+          defaultLabel: main # o master, según tu repo
+          uri: https://github.com/Isaac71412079/confiserverrepo
+server:
+  port: 8888
